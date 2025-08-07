@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divine Generator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
+      color: #f5f5f5;
+      padding: 20px;
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      color: #e63946;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background-color: #2c2c2c;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: none;
+      border-radius: 6px;
+      background-color: #444;
+      color: #f5f5f5;
+    }
+    button {
+      width: 100%;
+      background-color: #e63946;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #d62839;
+    }
+    @media screen and (max-width: 600px) {
+      form {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Divine Generator</h1>
+  <form method="POST">
+    <label>ФИО</label>
+    <input type="text" name="fio" required>
+
+    <label>Паспортные данные</label>
+    <textarea name="passport" required></textarea>
+
+    <label>Адрес</label>
+    <input type="text" name="address" required>
+
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Процент (цифрой)</label>
+    <input type="text" name="percent" required>
+
+    <label>Процент (прописью)</label>
+    <input type="text" name="percent_words" required>
+
+    <label>Срок действия договора</label>
+    <input type="text" name="duration" required>
+
+    <label>Номер договора</label>
+    <input type="text" name="contract_id" required>
+
+    <label>Дата</label>
+    <input type="text" name="date" required>
+
+    <label>ИНН</label>
+    <input type="text" name="inn" required>
+
+    <label>СНИЛС</label>
+    <input type="text" name="snils" required>
+
+    <label>Банковские реквизиты</label>
+    <textarea name="bank" required></textarea>
+
+    <button type="submit">Сгенерировать документы</button>
+  </form>
+</body>
+</html>
